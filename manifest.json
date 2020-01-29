@@ -1,10 +1,26 @@
-  {
-    "name": "Now Safe for Work",
-    "version": "1.0",
-    "description": "Extension to limit visibility of images for research",
-    "background": {
-      "scripts": ["image_pixelate.js"],
-      "persistent": false
-    },
-    "manifest_version": 2
-  }
+{
+	"manifest_version": 2,
+	"name": "Now Safe for Work",
+	"version": "1.0",
+	"description": "Extension to limit visibility of images for research",
+	
+	//"icons": {
+	//	"128": "icon128.png",
+	//	"48": "icon48.png",
+	//	"32": "icon32.png",
+	//	"16": "icon16.png"
+	//},
+	
+	"browser_action" : {
+		//"default_icon" : "icon32.png",
+		"default_popup" : "popup.html"
+	},
+	
+	//"content_scripts": [{
+	//	"matches": ["<all_urls>"],
+	//	"all_frames": true,
+	//	"js": [
+	//		"contentScript.js"
+	//	]
+	//}]
+}
